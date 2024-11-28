@@ -1,3 +1,5 @@
+import new_file as nf
+
 def is_string(value):
     """Determines if the given value is a string that is not purely
     numeric."""
@@ -40,3 +42,6 @@ def ask_question(question: str) -> str:
 
 name = ask_question("What is your name? ")
 print(f"Hello, {name}!")
+
+nf.greet()
+nf.greet()
