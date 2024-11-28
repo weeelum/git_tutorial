@@ -5,10 +5,12 @@ def is_string(value):
     # characters.
     return not value.isdigit() and len(value) > 0
 
-name = input("What is your name? ")
-
-while not is_string(name):
+def question():
     name = input("What is your name? ")
+    return name
+
+while not is_string(question()):
+    name = question()
 
     if is_string(name):
         print(f"Hello, {name}!")
